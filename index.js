@@ -13,12 +13,14 @@ const result = solution(a, b, c);
 document.write('Solution: ' + result);
 
 function inspect (a) {
-    if (a === 0) {
+    // if (a === 0) {
+    //     a = Number(prompt('a != 0, please enter another value:'));
+    // }
+    // return 'Parameter a: ' + a + '<br>';
+    while (a === 0) {
         a = Number(prompt('a != 0, please enter another value:'));
-        return 'Parameter a: ' + a + '<br>';
-    } else {
-        return 'Parameter a: ' + a + '<br>';
     }
+    return 'Parameter a: ' + a + '<br>';
 }
 
 function solution (a, b, c) {
